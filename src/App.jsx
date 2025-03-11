@@ -23,12 +23,17 @@ const App = () => {
 
   const [stack, setStack] = useState([]);
 
+  const addIngredient = (addedIngredient) => {
+    setStack([...stack, addedIngredient]);
+  };
+
   return (
     <main>
       <h1>Burger Stacker</h1>
       <section>
         <IngredientList
           ingredients={availableIngredients}
+          addIngredient={addIngredient}
         />
         <BurgerStack
           stack={stack}
