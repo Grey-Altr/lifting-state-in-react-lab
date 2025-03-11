@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import IngredientList from "./components/IngredientList/IngredientList.jsx";
-import BurgerStack from "./components/BurgerStack/BurgetStack.jsx";
+import BurgerStack from "./components/BurgerStack/BurgerStack.jsx";
 
 const App = () => {
   const availableIngredients = [
@@ -29,7 +29,7 @@ const App = () => {
 
   const removeIngredient = (removedIngredient) => {
     setStack.filter(stackedIngredient => stackedIngredient !== stack[removedIngredient]);
-  }
+  };
 
   return (
     <main>
