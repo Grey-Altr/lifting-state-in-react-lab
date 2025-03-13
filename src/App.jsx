@@ -28,7 +28,7 @@ const App = () => {
   };
 
   const removeIngredient = (removedIngredient) => {
-    setStack.filter(stackedIngredient => stackedIngredient !== stack[removedIngredient]);
+    setStack(stack.filter(addedIngredient => addedIngredient !== stack[removedIngredient]));
   };
 
   return (
